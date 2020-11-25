@@ -1,11 +1,14 @@
-
+import java.util.Scanner;
 
 public class Imprime_numero{
     public static void main(String[] args) {
+        Scanner ingreso = new Scanner(System.in);
+        System.out.println("Ingrese un número:\t");
+        int x = ingreso.nextInt();
         int i = 1;
         String enteros = "";
         
-		while(i < 6){
+		while(i <= x){
             enteros = enteros + String.valueOf(i);
             i++;
             
@@ -15,6 +18,7 @@ public class Imprime_numero{
                 
             }
             System.out.println();
+            ingreso.close();
         }
         
     }
